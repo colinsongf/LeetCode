@@ -4,34 +4,47 @@ class TreeNode:
 		self.left=self.right=self.next=None
 
 class Solution:
-	def connect_array(self,array):
-		if not array:
-			return
-		prev=array[0]
-		print len(array)
-		for current in array[1:]:
-			prev.next=current
-			prev=current
+	def addList(self,head,new):
+		if not head:
+			return new
+		head.next=self.addList(head.next,new)
+		return head
 	def connect(self,root):
 		if not root:
 			return
 		queue1,queue2=[],[]
-		queue1.append(root)
-		while queue1:
-			top=queue1.pop(0)
+		layerlist1=root
+		layerlist2prev=None
+		layerlist2=None
+		while layerlist1:
+			top=layerlist1
+			layerlist1=layerlist1.next
 			if top.left:
-				queue2.append(top.left)
+				if not layerlist2:
+					layerlist2prev=layerlist2=top.left
+				else:
+					layerlist2prev.next=top.left
+					layerlist2prev=layerlist2prev.next
 			if top.right:
-				queue2.append(top.right)
-			if not queue1:
-				self.connect_array(queue2)
-				queue1=queue2
-				queue2=[]
+				if not layerlist2:
+					layerlist2prev=layerlist2=top.right
+				else:
+					layerlist2prev.next=top.right
+					layerlist2prev=layerlist2prev.next
+			if not layerlist1:
+				layerlist1=layerlist2
+				layerlist2=None
 
+def debug(node):
+	if not node:
+		print
+		return
+	print node.val
+	debug(node.next)
 
 root=TreeNode(0)
 root1=TreeNode(1)
-root1.left=TreeNode(3)
+root1.left=root3=TreeNode(3)
 root1.right=TreeNode(4)
 root2=TreeNode(2)
 root2.left=TreeNode(5)
@@ -41,3 +54,5 @@ root.right=root2
 
 ins=Solution()
 ins.connect(root)
+
+debug(root3)

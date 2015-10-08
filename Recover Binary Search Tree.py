@@ -6,26 +6,30 @@ class TreeNode(object):
 		
 class Solution:
 	def __init__(self):
-		self.infixOrder=[]
-		self.sp=0
+		self.firstNode=self.secondNode=None
+		self.wrongNode1=self.wrongNode2=None
 	def infix(self,root):
 		if not root:
 			return
 		self.infix(root.left)
-		self.infixOrder.append(root.val)
+		if not self.firstNode:
+			self.firstNode=root
+		else:
+			if self.secondNode:
+				self.firstNode=self.secondNode
+			self.secondNode=root
+			if self.firstNode.val > self.secondNode.val:
+				if not self.wrongNode1:
+					self.wrongNode1=self.firstNode
+					self.wrongNode2=self.secondNode
+				else:
+					self.wrongNode2=self.secondNode
 		self.infix(root.right)
-	def infix_write(self,root):
-		if not root:
-			return
-		self.infix_write(root.left)
-		root.val=self.infixOrder[self.sp]
-		self.sp+=1
-		self.infix_write(root.right)
 	def recoverTree(self,root):
 		self.infix(root)
-		self.infixOrder.sort()
-		self.infix_write(root)
-		return root
+		if self.wrongNode1 and self.wrongNode2:
+			self.wrongNode1.val,self.wrongNode2.val=self.wrongNode2.val,self.wrongNode1.val
+
 	def infix_debug(self,root):
 		if not root:
 			return
