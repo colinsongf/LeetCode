@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int lengthOfLIS(int* nums, int numsSize) {
-	if (!numsSize) {
-		return 0;
-	}
+    if (!numsSize) {
+        return 0;
+    }
     int m[numsSize], i, j;
     int maxLength = 1;
     for (i = 0;i < numsSize; ++i) {
@@ -20,10 +20,4 @@ int lengthOfLIS(int* nums, int numsSize) {
     	}
     }
     return maxLength;
-}
-
-int main() {
-	int data[] = {10, 9, 2, 5, 3, 7, 101, 18};
-	int size = sizeof data / sizeof *data;
-	printf("%d\n", lengthOfLIS(data, size));
 }
