@@ -43,7 +43,3 @@ class Solution:
                 return ' '.join(answer)
         answer.extend(self.numberToWordsNoMoreThanThousand(num))
         return ' '.join(answer)
-
-ins = Solution()
-
-print ins.numberToWords(2147483647)

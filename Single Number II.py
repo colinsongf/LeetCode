@@ -12,6 +12,3 @@ class Solution:
         if bitmap[32]%3:
             ans-=2**31
         return ans
-
-ins=Solution()
-print ins.singleNumber([-2,-2,1,1,-3,1,-3,-3,-4,-2])

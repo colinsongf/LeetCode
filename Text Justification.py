@@ -50,9 +50,3 @@ class Solution:
             answer.append((i,end,subsum))
             i=j
         return self.makeanswer(answer,words,L) 
-
-ins=Solution()
-ans= ins.fullJustify(["Don't","go","around","saying","the","world","owes","you","a","living;","the","world","owes","you","nothing;","it","was","here","first."], 30)
-
-for line in ans:
-    print line

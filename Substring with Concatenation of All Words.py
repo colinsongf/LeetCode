@@ -27,6 +27,3 @@ class Solution:
                 answer.append(i)
             i+=1
         return answer
-            
-ins=Solution()
-print ins.findSubstring('lingmindraboofooowingdingbarrwingmonkeypoundcake',["fooo","barr","wing","ding","wing"])

@@ -22,6 +22,3 @@ class Solution:
                 maxarea=max(maxarea,(size-stack[-1][0])*stack[-1][1])
                 stack.pop()
         return maxarea
-
-ins=Solution()
-print ins.largestRectangleArea([2,1,2])

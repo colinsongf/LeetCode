@@ -19,29 +19,3 @@ class Solution:
         if not root:
             return root
         self.arrage(root)
-
-def looktree(root):
-    if not root:
-        return
-    print root.val
-    looktree(root.right)
-
-tree1=TreeNode(1)
-tree2=TreeNode(2)
-tree3=TreeNode(3)
-tree4=TreeNode(4)
-tree5=TreeNode(5)
-tree6=TreeNode(6)
-
-tree1.left=tree2
-tree1.right=tree5
-
-tree2.left=tree3
-tree2.right=tree4
-
-tree5.right=tree6
-
-ins=Solution()
-ins.flatten(tree1)
-
-looktree(tree1)

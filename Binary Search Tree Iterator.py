@@ -21,16 +21,3 @@ class BSTIterator:
         return top.val
     def hasNext(self):
         return self.minstack
-
-tree=TreeNode(5)
-tree3=TreeNode(3)
-tree8=TreeNode(8)
-tree.left,tree.right=tree3,tree8
-tree3.left,tree3.right=TreeNode(1),TreeNode(4)
-tree8.left,tree8.right=TreeNode(7),TreeNode(10)
-
-i,v=BSTIterator(tree),[]
-
-while i.hasNext():
-    v.append(i.next())
-print v

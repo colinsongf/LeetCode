@@ -16,7 +16,3 @@ class Solution:
         if len(ret)!=1 and ret[-1]=='/':
             ret=ret[:-1]
         return ret
-
-ins=Solution()
-
-print ins.simplifyPath('/home//foo/')

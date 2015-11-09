@@ -46,9 +46,3 @@ class Solution:
         else:
             head=big_head
         return head
-
-mylist = create_list([1])
-
-ins=Solution()
-
-disp(ins.partition(mylist,0))

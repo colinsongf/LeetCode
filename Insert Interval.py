@@ -31,17 +31,3 @@ class Solution:
         if newInterval:
             answer.append(newInterval)
         return answer
-
-def dispIntervals(intervals):
-    for interval in intervals:
-        print '[',interval.start,',',interval.end,']',
-    print
-
-ins=Solution()
-
-array=[Interval(1,5)]#,Interval(3,5),Interval(6,7),Interval(8,10),Interval(12,16)]
-newInterval=Interval(2,3)
-
-newarray=ins.insert(array,newInterval)
-
-dispIntervals(newarray)

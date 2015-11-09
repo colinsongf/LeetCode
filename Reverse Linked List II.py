@@ -38,21 +38,3 @@ class Solution:
             head = subrear
         subhead.next = nextrear
         return head
-
-def create_list(array):
-    lists=ListNode(array[0])
-    current=lists
-    for item in array[1:]:
-        current.next=ListNode(item)
-        current=current.next
-    return lists
-
-def disp(lists):
-    while lists:
-        print lists.val,'->',
-        lists=lists.next
-
-if __name__ == '__main__':
-    ins=Solution()
-    mylist=create_list([1,2,3,4,5])
-    disp(ins.reverseBetween(mylist,2,4))

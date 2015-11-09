@@ -18,6 +18,3 @@ class Solution:
                 prevlimit = Limit(num)
         answer.append(prevlimit.toStr())
         return answer
-
-ins = Solution()
-print ins.summaryRanges([0,1,2,4,5,7])

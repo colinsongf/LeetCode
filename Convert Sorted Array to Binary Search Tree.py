@@ -20,26 +20,3 @@ class Solution:
         size=len(array)
         tree = self.createTreeNode(array,0,size)
         return tree
-
-def inOrder(root):
-    if not root:
-        return
-    inOrder(root.left)
-    print root.val,
-    inOrder(root.right)
-
-def prevOrder(root):
-    if not root:
-        return
-    print root.val,
-    prevOrder(root.left)
-    prevOrder(root.right)
-
-ins=Solution()
-tree = ins.sortedArrayToBST([1,2,3,4,5,6])
-
-prevOrder(tree)
-print
-
-inOrder(tree)
-print

@@ -15,7 +15,3 @@ class Solution:
             if i:
                 counter+=1
         return counter
-
-ins=Solution()
-
-print ins.countPrimes(1500000)

@@ -7,6 +7,3 @@ class Solution(object):
         for i in range(size):
             number ^= array[i]
         return number
-
-ins=Solution()
-print ins.singleNumber([1,2,2,3,4,5,6,4,3,6,1])

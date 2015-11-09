@@ -10,9 +10,3 @@ class Solution:
                 return False
             step=max(step,array[i])
         return step>0
-
-ins=Solution()
-
-print ins.canJump([0,1])#false
-print ins.canJump([0])#true
-print ins.canJump([1,2,3])#true

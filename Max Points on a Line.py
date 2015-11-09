@@ -32,7 +32,3 @@ class Solution:
         for i in hashmap.values()+samemap.values():
             maxsum=max(maxsum,i)
         return maxsum
-
-ins=Solution()
-points=[Point(0,0),Point(0,0)]#[Point(84,250),Point(0,0),Point(1,0),Point(0,-70),Point(0,-70),Point(1,-1),Point(21,10),Point(42,90),Point(-42,-230)]
-print ins.maxPoints(points)

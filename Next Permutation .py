@@ -18,8 +18,3 @@ class Solution:
         answer+='%d%s' % (counter,prev)
         self.lasttime=answer
         return answer
-
-ins = Solution()
-
-print ins.countAndSay(2)
-print ins.countAndSay(3)

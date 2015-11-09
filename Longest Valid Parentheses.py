@@ -12,7 +12,3 @@ class Solution:
                 else:
                     stack[-1]=i
         return answer
-
-ins=Solution()
-
-print ins.longestValidParentheses("()(()")

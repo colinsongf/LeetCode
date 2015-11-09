@@ -11,6 +11,3 @@ class Solution(object):
             for j in range(1,n):
                 d[i][j]=min(d[i][j-1],d[i-1][j])+grid[i][j]
         return d[m-1][n-1]
-
-ins=Solution()
-print ins.minPathSum([[]])

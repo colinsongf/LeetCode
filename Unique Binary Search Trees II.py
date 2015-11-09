@@ -39,6 +39,3 @@ class Solution:
     def generateTrees(self,n):
         nodes=[x+1 for x in range(n)]
         return self.createtree(nodes)
-
-ins=Solution()
-print ins.generateTrees(2)

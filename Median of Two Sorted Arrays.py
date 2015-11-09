@@ -35,7 +35,3 @@ class Solution:
         elif array2:
             top+=array2.pop(0)
         return float(top)/2
-
-ins=Solution()
-
-print ins.findMedianSortedArrays([1,3,6,9],[2,5,7])

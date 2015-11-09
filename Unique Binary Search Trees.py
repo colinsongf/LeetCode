@@ -20,6 +20,3 @@ class Solution:
             func.append(summary)
             i+=1
         return func[n]
-
-ins=Solution()
-print ins.numTrees_method1(4)

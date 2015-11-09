@@ -15,11 +15,3 @@ class Solution:
                 if mydict2[j]!=i:
                     return False
         return True
-
-ins=Solution()
-
-print ins.isIsomorphic("ab", "aa")
-
-print ins.isIsomorphic("egg", "add")
-print ins.isIsomorphic("foo", "bar")
-print ins.isIsomorphic("paper", "title")

@@ -11,6 +11,3 @@ class Solution:
             if ratings[i]>ratings[i+1] and candys[i]<=candys[i+1]:
                 candys[i]=candys[i+1]+1
         return sum(candys)
-
-ins=Solution()
-print ins.candy([1,2,2])

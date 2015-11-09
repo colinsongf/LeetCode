@@ -35,6 +35,3 @@ class Solution:
                 nextroot=Answer(candidate,top,top.summary+candidate)
                 stack.append(nextroot)
         return answerList
-
-ins=Solution()
-print ins.combinationSum([2,3,6,7],7)

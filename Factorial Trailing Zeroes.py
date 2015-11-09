@@ -5,7 +5,3 @@ class Solution(object):
             ret+=n/5
             n/=5
         return ret
-
-ins=Solution()
-
-print ins.trailingZeroes(25)

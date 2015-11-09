@@ -35,10 +35,3 @@ class Solution:
             start+=1
             answer.extend(subans)
         return answer
-
-ins=Solution()
-print ins.spiralOrder([
- [ 1, 2, 3 ],
- [ 4, 5, 6 ],
- [ 7, 8, 9 ]
-])

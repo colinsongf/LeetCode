@@ -4,9 +4,6 @@ class UndirectedGraphNode(object):
         self.label = x
         self.neighbors=[]
 
-def bfs():
-    pass
-
 def dfs(node):
     visited = []
     stack = []
@@ -49,24 +46,3 @@ class Solution:
                     queue.append(neibor)
             visited.append(newnode.label)
         return retnode
-
-node0=UndirectedGraphNode(0)
-node1=UndirectedGraphNode(1)
-node2=UndirectedGraphNode(2)
-node3=UndirectedGraphNode(3)
-node4=UndirectedGraphNode(4)
-node5=UndirectedGraphNode(5)
-node0.neighbors=[node1,node5]
-node1.neighbors=[node2,node5]
-node2.neighbors=[node3]
-node3.neighbors=[node4,node4]
-node4.neighbors=[node5,node5]
-node5.neighbors=[]
-
-dfs(node0)
-
-ins= Solution()
-print '='
-ret=ins.cloneGraph(node0)
-
-dfs(ret)

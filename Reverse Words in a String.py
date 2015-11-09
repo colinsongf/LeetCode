@@ -13,6 +13,3 @@ class Solution(object):
             diction.append(word)
         diction.reverse()
         return ' '.join(diction)
-
-ins = Solution()
-print ins.reverseWords('   the sky    is blue ')

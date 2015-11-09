@@ -10,6 +10,3 @@ class Solution:
             if minvalue > prices[i]:
                 minvalue = prices[i]
         return maxprofit
-
-ins=Solution()
-print ins.maxProfit([])

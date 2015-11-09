@@ -35,6 +35,3 @@ class Solution:
                 continue
             number+=self.getBit(substr,table)
         return number
-
-ins=Solution()
-print ins.romanToInt('XXXIX')

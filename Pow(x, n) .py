@@ -14,6 +14,3 @@ class Solution:
         if flag:
             ret = 1.0/ret
         return ret
-
-ins=Solution()
-print ins.pow(34.00515,-3)

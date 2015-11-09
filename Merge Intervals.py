@@ -21,10 +21,3 @@ class Solution:
                 answer.append(interval)
                 currentend=interval.end
         return answer
-
-ins=Solution()
-array=[Interval(8,10),Interval(1,3),Interval(15,18),Interval(2,6)]
-answer=ins.merge(array)
-
-for ans in answer:
-    print ans.start,ans.end

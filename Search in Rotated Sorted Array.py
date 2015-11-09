@@ -30,6 +30,3 @@ class Solution:
             return self.binarysearch(num,0,minPos-1,target)
         else:
             return self.binarysearch(num,minPos,size-1,target)
-
-ins=Solution()
-print ins.search([3,1],1)

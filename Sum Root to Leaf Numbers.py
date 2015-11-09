@@ -20,11 +20,3 @@ class Solution(object):
     def sumNumbers(self, root):
         self.scanTree(root,0)
         return self.sum
-
-tree=TreeNode(1)
-tree1=TreeNode(2)
-tree2=TreeNode(3)
-tree.left=tree1
-tree.right=tree2
-ins=Solution()
-print ins.sumNumbers(tree)

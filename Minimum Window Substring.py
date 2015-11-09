@@ -28,6 +28,3 @@ class Solution:
                         minwindow=string[head:rear+1]
             rear+=1
         return minwindow
-
-ins=Solution()
-print ins.minWindow("aa","aa")

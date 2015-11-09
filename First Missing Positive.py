@@ -11,6 +11,3 @@ class Solution:
             if array[i]!=i+1:
                 return i+1
         return size+1
-
-ins=Solution()
-print ins.firstMissingPositive([2,1])#[3,4,-1,1])

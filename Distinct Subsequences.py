@@ -14,6 +14,3 @@ class Solution:
             for j in range(1,size2):
                 m[i][j]=m[i-1][j-1]+m[i-1][j] if S[i]==T[j] else m[i-1][j]
         return m[size1-1][size2-1]
-
-ins=Solution()
-print ins.numDistinct('ccc','c')

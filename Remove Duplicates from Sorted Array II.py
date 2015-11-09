@@ -17,7 +17,3 @@ class Solution:
                 array[addPos]=num
                 addPos+=1
         return addPos
-
-ins=Solution()
-
-print ins.removeDuplicates([1,1,1,2,2,3])

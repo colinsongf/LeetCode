@@ -8,7 +8,3 @@ class Solution:
         for i in range(size):
             matrix[i]=tmp[i][:]
         return matrix
-
-ins=Solution()
-
-print ins.rotate([[1,2,3],[4,5,6],[7,8,9]])

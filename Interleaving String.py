@@ -28,6 +28,3 @@ class Solution:
                 if s2[j-1]==string[k]:
                     m[i][j]=m[i][j] or m[i][j-1]
         return m[size1][size2]
-
-ins=Solution()
-print ins.isInterleave('aabcc','dbbca','aadbbbaccc')

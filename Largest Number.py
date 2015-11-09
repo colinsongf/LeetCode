@@ -30,6 +30,3 @@ class Solution:
         while len(ansstr)>1 and ansstr[0]=='0':
             ansstr=ansstr[1:]
         return ansstr
-
-ins=Solution()
-print ins.largestNumber([0,0,0])

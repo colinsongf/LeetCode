@@ -23,6 +23,3 @@ class MinStack:
     # @return an integer
     def getMin(self):
         return self.minvaluestack[-1]
-
-ins = MinStack()
-print ins.x

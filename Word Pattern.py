@@ -16,7 +16,3 @@ class Solution:
                 if mydict2[word] != ch:
                     return False
         return True
-
-ins = Solution()
-
-print ins.wordPattern("abba", "dog dog dog dog")

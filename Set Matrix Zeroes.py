@@ -15,11 +15,3 @@ class Solution(object):
             if col_record & (1<<j):
                 for i in range(row):
                     matrix[i][j]=0
-
-ins=Solution()
-matrix = [[1,2,3],
-            [4,0,6],
-            [7,8,0]]
-ins.setZeroes(matrix)
-
-print matrix

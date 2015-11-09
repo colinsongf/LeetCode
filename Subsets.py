@@ -24,6 +24,3 @@ class Solution(object):
                     step+=1
                     record[step]=-1
         return answerList
-
-ins=Solution()
-print ins.subsets([1,2,3])

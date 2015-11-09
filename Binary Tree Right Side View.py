@@ -23,13 +23,3 @@ class Solution:
                 queue1=queue2
                 queue2=[]
         return answer
-
-ins=Solution()
-root=TreeNode(1)
-root2=TreeNode(2)
-root3=TreeNode(3)
-root.left,root.right=root2,root3
-root2.right=TreeNode(5)
-root3.right=TreeNode(4)
-
-print ins.rightSideView(root)

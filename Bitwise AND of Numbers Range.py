@@ -9,7 +9,3 @@ class Solution:
                     answer|=(1<<i)
             i+=1
         return answer
-
-ins=Solution()
-
-print ins.rangeBitwiseAnd(5,7)

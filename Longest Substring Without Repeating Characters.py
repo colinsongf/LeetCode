@@ -18,6 +18,3 @@ class Solution:
             maxlength=max(maxlength,rear-head+1)
             rear+=1
         return maxlength
-
-ins=Solution()
-print ins.lengthOfLongestSubstring('tmmzuxt')

@@ -11,9 +11,3 @@ class Solution(object):
             hsp += 1
             rsp -= 1
         return flag  
-
-ins = Solution()
-print ord('A')<=ord('`')<=ord('z')# or ord('0')<=ord('`')<=ord('9')
-print ord('A')
-print ord('`')
-print ins.isPalindrome('`l;`` 1o1 ??;l`')

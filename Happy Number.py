@@ -13,6 +13,3 @@ class Solution:
         while n>=10:
             n=self.getBitResult(n)
         return n==1
-
-ins=Solution()
-print ins.isHappy(19)

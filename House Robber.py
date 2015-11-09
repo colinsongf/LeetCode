@@ -13,7 +13,3 @@ class Solution:
         for i in range(3,size):
             m[i]=max(m[i-2],m[i-3])+num[i]
         return max(m[size-2],m[size-1])
-
-ins=Solution()
-
-print ins.rob([1,1,1])

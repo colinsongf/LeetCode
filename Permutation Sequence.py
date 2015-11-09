@@ -15,7 +15,3 @@ class Solution(object):
                     break
             currentK += 1
         return ''.join([str(x) for x in currentArr])
-
-ins = Solution()
-
-print ins.getPermutation(9,273815)

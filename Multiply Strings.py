@@ -14,7 +14,3 @@ class ClassName(object):
             ret*=10
             ret+=self.mutil(num1,ch)
         return ret            
-
-ins = ClassName()
-
-print ins.multiply('123','123')

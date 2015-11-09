@@ -37,6 +37,3 @@ class Solution:
         answer=[]
         self.backtrace(palidict,string,size,answer,0)
         return self.answerList
-
-ins=Solution()
-print ins.partition('amanaplanacanalpanama')

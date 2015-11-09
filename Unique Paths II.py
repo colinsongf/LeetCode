@@ -19,6 +19,3 @@ class Solution(object):
                 if obstacleGrid[i][j]:
                     d[i][j]=0
         return d[m-1][n-1]
-
-ins = Solution()
-print ins.uniquePathsWithObstacles([[0,0],[0,1]])

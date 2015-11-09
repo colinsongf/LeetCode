@@ -11,6 +11,3 @@ class Solution:
             index=int(n)
             roman=table[i+1][index]+roman
         return roman
-
-ins=Solution()
-print ins.intToRoman(93)

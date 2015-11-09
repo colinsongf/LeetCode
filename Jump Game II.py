@@ -44,9 +44,3 @@ class Solution:
                 return counter
             starting=ending+1
             ending=max(maxvalue,ending)
-        
-ins=Solution()
-
-#bi=range(25000,0,-1)
-print ins.jump_low([9,4,5,4,1,8,1,2,0,7,8,7,0,6,6,1,1,2,5,0,9,8,4,7,9,6,8,1,4,0,8,5,5,3,9,8,1,2,2,3,0,1,3,2,7,9,3,0,1])
-print ins.jump([1,1,1,1])

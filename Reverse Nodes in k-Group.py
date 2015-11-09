@@ -71,8 +71,3 @@ class Solution:
                 prevsubrear.next=headsp
                 return newlisthead
         return newlisthead
-
-ins=Solution()
-head=createList([1,2,3,4,5])
-head=ins.reverseKGroup(head,2)
-displayList(head)

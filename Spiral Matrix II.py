@@ -22,6 +22,3 @@ class Solution:
             row-=2
             col-=2
         return matrix
-
-ins=Solution()
-print ins.generateMatrix(3)

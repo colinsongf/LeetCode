@@ -15,5 +15,3 @@ class Solution(object):
         for node in pre:
             preorder.append(node)
         return preorder
-ins=Solution()
-print ins.preorderTraversal(None)        

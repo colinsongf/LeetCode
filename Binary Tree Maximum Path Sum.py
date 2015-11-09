@@ -21,9 +21,3 @@ class Solution:
     def maxPathSum(self, root):
         self._maxPathSum(root)
         return self.maxpath
-
-root=TreeNode(1)
-root.left,root.right=TreeNode(2),TreeNode(3)
-
-ins=Solution()
-print ins.maxPathSum(root)

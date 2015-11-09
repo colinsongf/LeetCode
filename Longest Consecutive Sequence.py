@@ -18,6 +18,3 @@ class Solution:
                     next+=1
                 maxv=max(maxv,counter)
         return maxv
-
-ins=Solution()
-print ins.longestConsecutive([100, 4, 200, 1, 3, 2])

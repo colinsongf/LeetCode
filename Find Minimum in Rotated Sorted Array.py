@@ -12,5 +12,3 @@ class Solution:
                 head=mid
             elif num[mid]<num[rear]:
                 rear=mid
-ins=Solution()
-print ins.findMin([3,5,1,2])

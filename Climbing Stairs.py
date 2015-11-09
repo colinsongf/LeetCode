@@ -31,6 +31,3 @@ class Solution:
                 step+=1
                 record[step]=-1
         return counter
-
-ins = Solution()
-print ins.climbStairs(35)

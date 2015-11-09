@@ -18,7 +18,3 @@ class Solution(object):
             for j in range(1,isize-1):
                 d[i][j]=triangle[i][j]+min(d[i-1][j-1],d[i-1][j])
         return min(d[size-1])
-
-ins=Solution()
-
-print ins.minimumTotal([[2],[3,4],[6,5,7],[4,1,8,3]])

@@ -9,6 +9,3 @@ class Solution(object):
                 left=mid+1
             else:
                 right=mid
-
-ins=Solution()
-print ins.findPeakElement([1,2,3])

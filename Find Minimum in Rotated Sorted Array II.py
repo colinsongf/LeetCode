@@ -20,5 +20,3 @@ class Solution:
                 rear=mid
             else:
                 return self.origin_min(num)
-ins=Solution()
-print ins.findMin([3,5,1,2])

@@ -35,6 +35,3 @@ class Solution(object):
                 step+=1
                 record[step]=-1
         return answerList
-
-ins=Solution()
-print ins.subsetsWithDup([1,2,2])

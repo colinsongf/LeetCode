@@ -25,5 +25,3 @@ class Solution:
                 else:
                     answerList[row][bit-1]=0
         return self.handleanswer(answerList)
-ins=Solution()
-print ins.grayCode(2)

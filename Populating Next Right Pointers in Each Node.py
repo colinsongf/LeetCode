@@ -34,25 +34,3 @@ class Solution:
             if not layerlist1:
                 layerlist1=layerlist2
                 layerlist2=None
-
-def debug(node):
-    if not node:
-        print
-        return
-    print node.val
-    debug(node.next)
-
-root=TreeNode(0)
-root1=TreeNode(1)
-root1.left=root3=TreeNode(3)
-root1.right=TreeNode(4)
-root2=TreeNode(2)
-root2.left=TreeNode(5)
-root2.right=TreeNode(6)
-root.left=root1
-root.right=root2
-
-ins=Solution()
-ins.connect(root)
-
-debug(root3)

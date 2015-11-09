@@ -10,6 +10,3 @@ class Solution:
             counter+=1
         ret<<=(32-counter)
         return ret
-
-ins=Solution()
-print ins.reverseBits(4326)

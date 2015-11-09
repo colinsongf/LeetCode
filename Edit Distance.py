@@ -23,6 +23,3 @@ class Solution:
                 else:
                     m[i][j]=min(m[i-1][j-1],m[i][j-1],m[i-1][j])+1
         return m[size1-1][size2-1]
-
-ins=Solution()
-print ins.minDistance('james','wade')

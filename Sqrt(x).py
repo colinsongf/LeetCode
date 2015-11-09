@@ -12,6 +12,3 @@ class Solution:
             else:
                 i = mid+1
         return array[i-1]
-ins=Solution()
-for i in range(10):
-    print ins.sqrt(i)

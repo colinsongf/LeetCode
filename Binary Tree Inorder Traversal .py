@@ -21,10 +21,3 @@ class Solution(object):
         for node in inorder:
             seq.append(node)
         return seq
-
-ins=Solution()
-
-root=TreeNode(1)
-root.left=TreeNode(2)
-
-print ins.inorderTraversal(root)

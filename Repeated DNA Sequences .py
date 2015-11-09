@@ -21,6 +21,3 @@ class Solution:
             else:
                 record[number]=1
         return retdict
-
-ins=Solution()
-print ins.findRepeatedDnaSequences("AAAAAAAAAAAA")

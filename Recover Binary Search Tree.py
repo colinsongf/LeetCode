@@ -36,21 +36,3 @@ class Solution:
         self.infix_debug(root.left)
         print (root.val)
         self.infix_debug(root.right)
-
-tree=TreeNode(5)
-tree7=TreeNode(7)
-tree1=TreeNode(1)
-tree9=TreeNode(9)
-tree.left=tree7
-tree.right=tree9
-tree7.left=tree1
-tree7.right=TreeNode(4)
-tree1.right=TreeNode(2)
-tree9.left=TreeNode(3)
-tree9.right=TreeNode(10)
-
-ins=Solution()
-ins.infix_debug(tree)
-ins.recoverTree(tree)
-print '==='
-ins.infix_debug(tree)

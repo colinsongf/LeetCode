@@ -37,6 +37,3 @@ class Solution:
                 nextroot=Answer(candidate,top,top.summary+candidate,i)
                 stack.append(nextroot)
         return answerList
-
-ins=Solution()
-print ins.combinationSum2([10,1,2,7,6,1,5],8)
