@@ -23,6 +23,3 @@ class Solution:
             result*=10
             result+=int(c)
         return self.beforereturn(result*neg)
-
-ins=Solution()
-print ins.atoi('      -11919730356x')
